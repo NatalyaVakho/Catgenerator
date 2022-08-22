@@ -6,4 +6,4 @@ const catsGroupGenerate = (n) => {
     return arr;
 }
 
-catsGroupGenerate(2);
+export {catsGroupGenerate};
