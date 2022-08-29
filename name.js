@@ -1,7 +1,7 @@
-import { catsGroupGenerate } from "./catsGroupGenerate.js";
+const { catsGroupGenerate } = require("./catsGroupGenerate.js");
 
-const catsName = () => {
-    const cats = catsGroupGenerate(99);
+exports.catsName = (n) => {
+    const cats = catsGroupGenerate(n);
     let catsname = [];
     for (let cat of cats) {
         let catname = cat.name;
@@ -11,4 +11,6 @@ const catsName = () => {
     return catsname;
 };
 
-catsName();
+//catsName(6);
+
+//export {catsName};

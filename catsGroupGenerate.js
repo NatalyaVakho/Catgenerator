@@ -1,9 +1,10 @@
-import { catFactory } from "./catFactory.js";
+const { catFactory } = require("./catFactory.js");
 
-const catsGroupGenerate = (n) => {
+exports.catsGroupGenerate = (n, defaults) => {
     let arr = Array.from({length: n}, () => catFactory());
-    console.log(arr);
+    //console.log(arr);
     return arr;
 }
 
-export {catsGroupGenerate};
+//catsGroupGenerate(3);
+//export {catsGroupGenerate};

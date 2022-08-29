@@ -1,7 +1,7 @@
-import { cats } from "./cats.js";
-import { pick } from "./list.js";
+const { cats } = require ("./cats.js");
+const { pick } = require ("./list.js");
 
-const catFactory = () => {
+exports.catFactory = () => {
     const result = {
         name: pick(cats.name),
         age: pick(cats.age),
@@ -9,8 +9,9 @@ const catFactory = () => {
         legsCount: pick(cats.legsCount),
         tailLength: pick(cats.tailLength),
     };
+    //console.log(result);
     return result;
 }
+//catFactory();
 
-export {catFactory};
-
+// export {catFactory};
