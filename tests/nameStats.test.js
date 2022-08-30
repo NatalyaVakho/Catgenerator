@@ -1,6 +1,8 @@
-// const {nameStats} = require('../nameStats');
-// const { cats } = require('../cats');
+const {nameStats} = require('../nameStats');
+const { cats } = require('../cats');
+const { pick } = require("../list.js");
 
-// test('name statistics', () => {
-//     expect(nameStats(99)).toHaveProperty('Tobi', expect.any(Number));
-// });
+test('name statistics', () => {
+    let name = pick(cats.name);
+    expect(nameStats(99)).toHaveProperty(name, expect.any(Number));
+});
