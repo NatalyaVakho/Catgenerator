@@ -1,4 +1,4 @@
-const { catFactory } = require("../catFactory");
+const catFactory = require("../catFactory");
 const { cats } = require('../cats');
 
 describe('Cat generator test', () => {

@@ -1,7 +1,6 @@
-//import { catsGroupGenerate } from "./catsGroupGenerate.js";
-const {catsGroupGenerate} = require('./catsGroupGenerate');
+const catsGroupGenerate = require('./catsGroupGenerate');
 
-exports.youngestCat = (n) => {
+const youngestCat = (n) => {
     const cats = catsGroupGenerate(99);
     let cat = cats.filter(item => item.age < 3);
     let youngest = cat.filter(item => item.gender == 'female');
@@ -16,3 +15,5 @@ exports.youngestCat = (n) => {
 }
 
 //youngestCat(7);
+
+module.exports = youngestCat;

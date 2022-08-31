@@ -1,7 +1,6 @@
-//import { catsGroupGenerate } from "./catsGroupGenerate.js";
-const {catsName} = require('./name');
+const catsName = require('./name');
 
-exports.nameStats = (n) => {
+const nameStats = (n) => {
     const countItems = catsName(n).reduce((acc, item) => {
         acc[item] = acc[item] ? acc[item] + 1 : 1;
         return acc;
@@ -11,3 +10,5 @@ exports.nameStats = (n) => {
 }
 
 //nameStats();
+
+module.exports = nameStats;

@@ -1,9 +1,8 @@
-const {catsGender} = require('../gender');
-const {catsName} = require('../name');
+const catsGender = require('../gender');
+const catsName = require('../name');
 const { cats } = require('../cats');
-const {oldestCat} = require('../oldest');
-const {youngestCat} = require('../youngest');
-const { catFactory } = require('../catFactory');
+const oldestCat = require('../oldest');
+const youngestCat = require('../youngest');
 
 describe('Task 4 tests', () => {
     test('only male', () => {

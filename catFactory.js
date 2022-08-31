@@ -1,7 +1,7 @@
-const { cats } = require ("./cats.js");
-const { pick } = require ("./list.js");
+const {cats} = require ("./cats.js");
+const  pick = require ("./list.js");
 
-exports.catFactory = () => {
+const catFactory = () => {
     const result = {
         name: pick(cats.name),
         age: pick(cats.age),
@@ -14,4 +14,5 @@ exports.catFactory = () => {
 }
 //catFactory();
 
-// export {catFactory};
+
+module.exports = catFactory;

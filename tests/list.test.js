@@ -1,4 +1,4 @@
-const { pick } = require("../list.js");
+const pick = require("../list.js");
 const { cats } = require('../cats');
 
 test("objects", () => {
