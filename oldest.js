@@ -5,10 +5,10 @@ const oldestCat = (n) => {
     let cat = cats.filter(item => item.age >= 8);
     let oldest = cat.filter(item => item.gender == 'male');
     oldest.length = n;
-    console.log(oldest);
+    //console.log(oldest);
     return oldest;
 }
 
-oldestCat(5);
+//oldestCat(5);
 
 module.exports = oldestCat;

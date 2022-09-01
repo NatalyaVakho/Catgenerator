@@ -7,7 +7,7 @@ const catsName = (n) => {
         let catname = cat.name;
         catsname.push(catname);
     }
-    console.log(catsname);
+    //console.log(catsname);
     return catsname;
 };
 

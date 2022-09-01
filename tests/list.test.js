@@ -2,8 +2,14 @@ const pick = require("../list.js");
 const { cats } = require('../cats');
 
 test("objects", () => {
-    // let list = [1, 2, 3, 4];
-    let expected = pick(cats.name);
-    expect(cats.name).toContain(expected);
+    const testArray = ['Rex', 'Kiki', 'Poko', 'Tobi', 'Dobbie', 'Faust', 'Lilith', 'Boni', 'MurMeow', 'Vivienne'];
+    const result = pick(testArray);
+
+    const compareResults = () => {
+        if (testArray.includes(result)) {
+        return result;
+    }};
+
+    expect(result).toBe(compareResults());
 });
 

@@ -5,10 +5,10 @@ const nameStats = (n) => {
         acc[item] = acc[item] ? acc[item] + 1 : 1;
         return acc;
     }, {});
-    console.log(countItems);
+    //console.log(countItems);
     return countItems;
 }
 
-//nameStats();
+//nameStats(999);
 
 module.exports = nameStats;

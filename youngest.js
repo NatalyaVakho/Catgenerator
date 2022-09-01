@@ -10,7 +10,7 @@ const youngestCat = (n) => {
         catsname.push(catname);
     }
     catsname.length = n;
-    console.log(catsname);
+    //console.log(catsname);
     return catsname;
 }
 
